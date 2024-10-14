@@ -1,0 +1,721 @@
+﻿{
+  "Delhi": [
+    {
+      "name": "India Gate",
+      "description": "A war memorial dedicated to the soldiers who died in World War I.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/delhi/1.gif"
+    },
+    {
+      "name": "Red Fort",
+      "description": "A UNESCO World Heritage Site, known for its stunning Mughal architecture.",
+      "timings": "9:30 AM to 4:30 PM",
+      "ticket_price": "₹10 (Indian), ₹250 (Foreigners)",
+      "image_url": "/images/delhi/2.jpg"
+    },
+    {
+      "name": "Qutub Minar",
+      "description": "A UNESCO World Heritage Site, this is the tallest brick minaret in the world.",
+      "timings": "7:00 AM to 5:00 PM",
+      "ticket_price": "₹30 (Indian), ₹500 (Foreigners)",
+      "image_url": "/images/delhi/3.jpg"
+    },
+    {
+      "name": "Lotus Temple",
+      "description": "Famous for its flowerlike architecture, it's a Bahá'í House of Worship.",
+      "timings": "9:00 AM to 5:30 PM",
+      "ticket_price": "Free",
+      "image_url": "/images/delhi/4.jpg"
+    },
+    {
+      "name": "Humayun's Tomb",
+      "description": "A UNESCO World Heritage Site, this tomb is a beautiful example of Mughal architecture.",
+      "timings": "6:00 AM to 6:00 PM",
+      "ticket_price": "₹30 (Indian), ₹500 (Foreigners)",
+      "image_url": "/images/delhi/5.jpg"
+    },
+    {
+      "name": "Chandni Chowk",
+      "description": "A bustling market area famous for its street food and shopping.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/delhi/6.jpg"
+    }
+],
+  "Andaman and Nicobar Islands": [
+    {
+      "name": "Cellular Jail",
+      "description": "A historic prison known for its role in India's freedom struggle.",
+      "timings": "9:00 AM to 5:00 PM",
+      "ticket_price": "₹30 (Indian), ₹150 (Foreigners)",
+      "image_url": "/images/andaman/1.jpg"
+    },
+    {
+      "name": "Havelock Island",
+      "description": "Famous for its pristine beaches and water sports.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/andaman/2.jpg"
+    },
+    {
+      "name": "Neil Island",
+      "description": "Known for its beautiful beaches and coral reefs.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/andaman/3.jpg"
+    },
+    {
+      "name": "Radhanagar Beach",
+      "description": "Rated as one of the best beaches in Asia.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/andaman/4.jpg"
+    }
+  ],
+  "Arunachal Pradesh": [
+    {
+      "name": "Tawang Monastery",
+      "description": "One of the largest monasteries in India, located at a high altitude.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/arunachal/1.jpg"
+    },
+    {
+      "name": "Ziro Valley",
+      "description": "Known for its lush greenery and the Apatani tribal culture.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/arunachal/2.jpg"
+    },
+    {
+      "name": "Bomdila Monastery",
+      "description": "A beautiful monastery offering stunning views of the Himalayas.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/arunachal/3.jpg"
+    }
+  ],
+  "Assam": [
+    {
+      "name": "Kaziranga National Park",
+      "description": "A UNESCO World Heritage Site famous for the Indian one-horned rhinoceros.",
+      "timings": "Open 24 hours",
+      "ticket_price": "₹50 (Indian), ₹200 (Foreigners)",
+      "image_url": "/images/assam/1.jpg"
+    },
+    {
+      "name": "Majuli Island",
+      "description": "The world's largest river island, known for its culture and biodiversity.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/assam/2.jpg"
+    },
+    {
+      "name": "Manas National Park",
+      "description": "A UNESCO World Heritage Site known for its rich wildlife.",
+      "timings": "Open 24 hours",
+      "ticket_price": "₹50 (Indian), ₹200 (Foreigners)",
+      "image_url": "/images/assam/3.jpg"
+    }
+  ],
+  "Bihar": [
+    {
+      "name": "Bodh Gaya",
+      "description": "A UNESCO World Heritage Site where Gautama Buddha attained enlightenment.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/bihar/1.jpg"
+    },
+    {
+      "name": "Nalanda University",
+      "description": "An ancient center of learning and a UNESCO World Heritage Site.",
+      "timings": "9:00 AM to 5:00 PM",
+      "ticket_price": "Free",
+      "image_url": "/images/bihar/2.jpg"
+    },
+    {
+      "name": "Vaishali",
+      "description": "An important archaeological site associated with Buddhism.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/bihar/3.jpg"
+    },
+    {
+      "name": "Rajgir",
+      "description": "Known for its ancient ruins and hot springs.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/bihar/4.jpg"
+    }
+  ],
+  "Chhattisgarh": [
+    {
+      "name": "Chitrakote Falls",
+      "description": "Known as the 'Niagara of India,' it is one of the widest waterfalls.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/chhattisgarh/1.jpg"
+    },
+    {
+      "name": "Kanger Valley National Park",
+      "description": "Famous for its rich biodiversity and limestone caves.",
+      "timings": "Open 24 hours",
+      "ticket_price": "₹30 (Indian), ₹150 (Foreigners)",
+      "image_url": "/images/chhattisgarh/2.jpg"
+    },
+    {
+      "name": "Bastar",
+      "description": "Known for its tribal culture and natural beauty.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/chhattisgarh/3.jpg"
+    },
+    {
+      "name": "Sirpur",
+      "description": "An ancient site known for its temples and archaeological significance.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/chhattisgarh/4.jpg"
+    }
+  ],
+  "Goa": [
+    {
+      "name": "Basilica of Bom Jesus",
+      "description": "A UNESCO World Heritage Site known for its Baroque architecture.",
+      "timings": "9:00 AM to 6:30 PM",
+      "ticket_price": "Free",
+      "image_url": "/images/goa/1.jpg"
+    },
+    {
+      "name": "Dudhsagar Waterfalls",
+      "description": "One of the tallest waterfalls in India, located in the Western Ghats.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/goa/2.jpg"
+    },
+    {
+      "name": "Fort Aguada",
+      "description": "A well-preserved 17th-century Portuguese fort.",
+      "timings": "9:30 AM to 5:30 PM",
+      "ticket_price": "₹25 (Indian), ₹300 (Foreigners)",
+      "image_url": "/images/goa/3.jpg"
+    },
+    {
+      "name": "Anjuna Beach",
+      "description": "Famous for its vibrant nightlife and flea markets.",
+      "timings": "Open 24 hours",
+      "ticket_price": "Free",
+      "image_url": "/images/goa/4.jpg"
+    }
+  ],
+    "Haryana": [
+      {
+        "name": "Kurukshetra",
+        "description": "A historic city known for its association with the Mahabharata.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/haryana/1.jpg"
+      },
+      {
+        "name": "Sohna",
+        "description": "Famous for its hot springs and scenic beauty in Haryana.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/haryana/2.jpg"
+      },
+      {
+        "name": "Faridabad",
+        "description": "Known for its modern architecture and industrial landscape.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/haryana/3.jpg"
+      },
+      {
+        "name": "Panchkula",
+        "description": "Famous for its gardens and modern town planning.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/haryana/4.jpg"
+      }
+    ],
+    "Himachal Pradesh": [
+      {
+        "name": "Shimla",
+        "description": "The capital city known for its colonial architecture and scenic views.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/himachal/1.jpg"
+      },
+      {
+        "name": "Manali",
+        "description": "A popular hill station known for adventure sports and scenic beauty.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/himachal/2.jpg"
+      },
+      {
+        "name": "Dharamshala",
+        "description": "It is Home to the Dalai Lama and Tibetan culture.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/himachal/3.jpg"
+      },
+      {
+        "name": "Kullu",
+        "description": "Known for its lush green valleys and rivers.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/himachal/4.jpg"
+      }
+    ],
+    "Jharkhand": [
+      {
+        "name": "Netarhat",
+        "description": "Known as the 'Queen of Chotanagpur,' famous for its sunrise.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/jharkhand/1.jpg"
+      },
+      {
+        "name": "Betla National Park",
+        "description": "Famous for its wildlife and natural beauty that it contains.",
+        "timings": "Open 24 hours",
+        "ticket_price": "₹50 (Indian), ₹300 (Foreigners)",
+        "image_url": "/images/jharkhand/2.jpg"
+      },
+      {
+        "name": "Deoghar",
+        "description": "Famous for the Baidyanath Temple and religious significance.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/jharkhand/3.jpg"
+      },
+      {
+        "name": "Dalma Wildlife Sanctuary",
+        "description": "Known for its elephants and rich biodiversity.",
+        "timings": "Open 24 hours",
+        "ticket_price": "₹10 (Indian), ₹50 (Foreigners)",
+        "image_url": "/images/jharkhand/4.jpg"
+      }
+    ],
+    "Karnataka": [
+      {
+        "name": "Hampi",
+        "description": "A UNESCO World Heritage Site known for its ancient temples and ruins.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/karnataka/1.jpg"
+      },
+      {
+        "name": "Mysore Palace",
+        "description": "A historical palace known for its stunning architecture.",
+        "timings": "10:00 AM to 5:30 PM",
+        "ticket_price": "₹70 (Indian), ₹500 (Foreigners)",
+        "image_url": "/images/karnataka/2.jpg"
+      },
+      {
+        "name": "Coorg",
+        "description": "Known for its coffee plantations and scenic landscapes.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/karnataka/3.jpg"
+      },
+      {
+        "name": "Bangalore Palace",
+        "description": "A historic palace with Tudor-style architecture.",
+        "timings": "10:00 AM to 5:30 PM",
+        "ticket_price": "₹230 (Indian), ₹460 (Foreigners)",
+        "image_url": "/images/karnataka/4.jpg"
+      }
+    ],
+    "Kerala": [
+      {
+        "name": "Munnar",
+        "description": "A beautiful hill station known for its tea gardens.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/kerala/1.jpg"
+      },
+      {
+        "name": "Alleppey",
+        "description": "Famous for its backwaters and houseboat experiences.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/kerala/2.jpg"
+      },
+      {
+        "name": "Kochi",
+        "description": "Known for its historical significance and vibrant culture.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/kerala/3.jpg"
+      },
+      {
+        "name": "Wayanad",
+        "description": "Famous for its scenic landscapes and wildlife.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/kerala/4.jpg"
+      }
+    ],
+    "Madhya Pradesh": [
+      {
+        "name": "Khajuraho Temples",
+        "description": "A UNESCO World Heritage Site known for its erotic sculptures.",
+        "timings": "6:00 AM to 6:00 PM",
+        "ticket_price": "₹40 (Indian), ₹600 (Foreigners)",
+        "image_url": "/images/madhya/1.jpg"
+      },
+      {
+        "name": "Sanchi Stupa",
+        "description": "A UNESCO World Heritage Site known for its ancient Buddhist stupas.",
+        "timings": "8:00 AM to 6:00 PM",
+        "ticket_price": "₹30 (Indian), ₹500 (Foreigners)",
+        "image_url": "/images/madhya/2.jpg"
+      },
+      {
+        "name": "Pachmarhi",
+        "description": "The only hill station in Madhya Pradesh, known for its natural beauty.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/madhya/3.jpg"
+      },
+      {
+        "name": "Mandu",
+        "description": "Known for its historical ruins and architecture.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/madhya/4.jpg"
+      }
+    ],
+    "Maharashtra": [
+      {
+        "name": "Gateway of India",
+        "description": "An iconic arch monument on the waterfront of Mumbai.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/maharashtra/1.jpg"
+      },
+      {
+        "name": "Ajanta Caves",
+        "description": "A UNESCO World Heritage Site known for ancient rock-cut caves.",
+        "timings": "9:00 AM to 5:30 PM",
+        "ticket_price": "₹10 (Indian), ₹250 (Foreigners)",
+        "image_url": "/images/maharashtra/2.jpg"
+      },
+      {
+        "name": "Ellora Caves",
+        "description": "A UNESCO World Heritage Site famous for its rock-cut temples.",
+        "timings": "9:00 AM to 5:30 PM",
+        "ticket_price": "₹10 (Indian), ₹250 (Foreigners)",
+        "image_url": "/images/maharashtra/3.jpg"
+      },
+      {
+        "name": "Lonavala",
+        "description": "A popular hill station known for its scenic views.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/maharashtra/4.jpg"
+      }
+    ],
+    "Manipur": [
+      {
+        "name": "Loktak Lake",
+        "description": "The largest freshwater lake in northeastern India.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/manipur/1.jpg"
+      },
+      {
+        "name": "Imphal",
+        "description": "The capital city known for its rich culture and history.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/manipur/2.jpg"
+      },
+      {
+        "name": "Kangla Fort",
+        "description": "A historic fort with cultural significance in manipur.",
+        "timings": "8:00 AM to 5:00 PM",
+        "ticket_price": "Free",
+        "image_url": "/images/manipur/3.jpg"
+      },
+      {
+        "name": "Khonghampat Orchidarium",
+        "description": "Famous for its variety of orchids.",
+        "timings": "Open 24 hours",
+        "ticket_price": "Free",
+        "image_url": "/images/manipur/4.jpg"
+      }
+    ],
+    "Rajasthan": [
+        {
+          "name": "Jaipur",
+          "description": "The capital city known for its historic palaces and forts.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/1.jpg"
+        },
+        {
+          "name": "Udaipur",
+          "description": "It is Famous for its lakes and palaces especially city palace.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/2.jpg"
+        },
+        {
+          "name": "Jaisalmer",
+          "description": "Known as the Golden City, famous for its desert and forts.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/3.jpg"
+        },
+        {
+          "name": "Jodhpur",
+          "description": "Known as the Blue City, famous for its historic forts.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/4.jpg"
+        },
+        {
+          "name": "Pushkar",
+          "description": "Famous for its sacred lake and annual camel fair.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/5.jpg"
+        },
+        {
+          "name": "Ajmer",
+          "description": "Known for the Ajmer Sharif Dargah, a significant pilgrimage site.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/6.jpg"
+        },
+        {
+          "name": "Chittorgarh Fort",
+          "description": "A UNESCO World Heritage Site known for its massive fort complex.",
+          "timings": "Open 9:00 AM to 6:00 PM",
+          "ticket_price": "₹50 (Indian), ₹500 (Foreigners)",
+          "image_url": "/images/rajasthan/7.jpg"
+        },
+        {
+          "name": "Bikaner",
+          "description": "Famous for its sand dunes and the Junagarh Fort.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/8.jpg"
+        },
+        {
+          "name": "Neemrana Fort",
+          "description": "A historic fort converted into a heritage hotel where people visits.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/rajasthan/9.jpg"
+        }
+      ],
+      "Sikkim": [
+        {
+          "name": "Gangtok",
+          "description": "The capital city known for its monasteries and views of Kanchenjunga.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/sikkim/1.jpg"
+        },
+        {
+          "name": "Pelling",
+          "description": "Known for its stunning views of the Himalayas.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/sikkim/2.jpg"
+        },
+        {
+          "name": "Nathula Pass",
+          "description": "A mountain pass connecting India and China Borders.",
+          "timings": "9:00 AM to 3:30 PM",
+          "ticket_price": "₹250 (Indian only)",
+          "image_url": "/images/sikkim/3.jpg"
+        },
+        {
+          "name": "Yumthang Valley",
+          "description": "Known as the 'Valley of Flowers,' famous for its scenic beauty.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/sikkim/4.jpg"
+        }
+      ],
+      "Tamil Nadu": [
+        {
+          "name": "Meenakshi Temple",
+          "description": "A historic temple known for its stunning architecture.",
+          "timings": "5:00 AM to 12:30 PM and 4:00 PM to 9:30 PM",
+          "ticket_price": "Free",
+          "image_url": "/images/tamilnadu/1.jpg"
+        },
+        {
+          "name": "Mahatma Gandhi Memorial",
+          "description": "A memorial dedicated to Mahatma Gandhi in Chennai.",
+          "timings": "10:00 AM to 6:00 PM",
+          "ticket_price": "Free",
+          "image_url": "/images/tamilnadu/2.jpg"
+        },
+        {
+          "name": "Ooty",
+          "description": "A popular hill station known for its gardens and scenic views.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/tamilnadu/3.jpg"
+        },
+        {
+          "name": "Kanyakumari",
+          "description": "The southernmost tip of India, known for its sunset views.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/tamilnadu/4.jpg"
+        }
+      ],
+      "Telangana": [
+        {
+          "name": "Hyderabad",
+          "description": "The capital city known for its rich history and cuisine.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/telangana/1.jpg"
+        },
+        {
+          "name": "Warangal Fort",
+          "description": "Known for its historic architecture and cultural significance.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/telangana/2.jpg"
+        },
+        {
+          "name": "Ramoji Film City",
+          "description": "One of the largest film cities in the world, offering tours.",
+          "timings": "9:00 AM to 5:30 PM",
+          "ticket_price": "₹1,100 (Indian), ₹2,200 (Foreigners)",
+          "image_url": "/images/telangana/3.jpg"
+        },
+        {
+          "name": "Nalgonda Fort",
+          "description": "A historic fort known for its beautiful architecture.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/telangana/4.jpg"
+        }
+      ],
+      "Tripura": [
+        {
+          "name": "Ujjayanta Palace",
+          "description": "A historic palace that serves as a museum.",
+          "timings": "10:00 AM to 5:00 PM",
+          "ticket_price": "₹10 (Indian), ₹50 (Foreigners)",
+          "image_url": "/images/tripura/1.jpg"
+        },
+        {
+          "name": "Neermahal",
+          "description": "A beautiful palace in the middle of a lake.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/tripura/2.jpg"
+        },
+        {
+          "name": "Sepahijala Wildlife Sanctuary",
+          "description": "Known for its diverse flora and fauna.",
+          "timings": "Open 24 hours",
+          "ticket_price": "₹20 (Indian), ₹100 (Foreigners)",
+          "image_url": "/images/tripura/3.jpg"
+        }
+      ],
+      "Uttar Pradesh": [
+        {
+          "name": "Taj Mahal",
+          "description": "A UNESCO World Heritage Site and an iconic symbol of love.",
+          "timings": "6:00 AM to 6:30 PM",
+          "ticket_price": "₹50 (Indian), ₹1,000 (Foreigners)",
+          "image_url": "/images/uttarpradesh/1.jpg"
+        },
+        {
+          "name": "Varanasi",
+          "description": "One of the oldest inhabited cities in the world, known for its ghats.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/uttarpradesh/2.jpg"
+        },
+        {
+          "name": "Agra Fort",
+          "description": "A UNESCO World Heritage Site known for its historical significance.",
+          "timings": "6:00 AM to 6:00 PM",
+          "ticket_price": "₹40 (Indian), ₹650 (Foreigners)",
+          "image_url": "/images/uttarpradesh/3.jpg"
+        },
+        {
+          "name": "Fatehpur Sikri",
+          "description": "A UNESCO World Heritage Site known for its Mughal architecture.",
+          "timings": "6:00 AM to 6:00 PM",
+          "ticket_price": "₹50 (Indian), ₹610 (Foreigners)",
+          "image_url": "/images/uttarpradesh/4.jpg"
+        }
+      ],
+      "Uttarakhand": [
+        {
+          "name": "Nainital",
+          "description": "A popular hill station known for its beautiful lake.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/uttarakhand/1.jpg"
+        },
+        {
+          "name": "Mussoorie",
+          "description": "Known as the 'Queen of the Hills,' famous for its scenic beauty.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/uttarakhand/2.jpg"
+        },
+        {
+          "name": "Rishikesh",
+          "description": "It is Famous for yoga and adventure sports.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/uttarakhand/3.jpg"
+        },
+        {
+          "name": "Haridwar",
+          "description": "A significant pilgrimage site known for the Ganga Aarti.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/uttarakhand/4.jpg"
+        }
+      ],
+      "West Bengal": [
+        {
+          "name": "Darjeeling",
+          "description": "It is Famous for its tea gardens and scenic views.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/westbengal/1.jpg"
+        },
+        {
+          "name": "Kolkata",
+          "description": "The cultural capital known for its art, literature, and history.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/westbengal/2.jpg"
+        },
+        {
+          "name": "Sundarbans",
+          "description": "A UNESCO World Heritage Site known for its mangrove forests.",
+          "timings": "Open 24 hours",
+          "ticket_price": "₹20 (Indian), ₹100 (Foreigners)",
+          "image_url": "/images/westbengal/3.jpg"
+        },
+        {
+          "name": "Kalimpong",
+          "description": "Known for its beautiful landscapes and monasteries.",
+          "timings": "Open 24 hours",
+          "ticket_price": "Free",
+          "image_url": "/images/westbengal/4.jpg"
+        }
+      ]
+    }
+    
