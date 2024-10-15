@@ -293,7 +293,7 @@ export default function Component() {
       exit={{ opacity: 0 }}
       className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 dark:from-teal-800 dark:to-blue-800 bg-opacity-90 flex items-center justify-center z-50"
     >
-      <div className="text-center bg-white dark:bg-gray-800 p-4 sm:p-2 md:p-4 rounded-lg shadow-2xl max-w-sm w-full mx-4">
+      <div className="text-center bg-white dark:bg-gray-800 p-4 sm:p-4 md:p-8 rounded-lg shadow-2xl max-w-sm w-full mx-4">
         <motion.div
           animate={{
             rotate: [0, 360],
