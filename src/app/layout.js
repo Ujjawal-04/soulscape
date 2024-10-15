@@ -18,7 +18,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Wanderlust',
+  title: 'Soulscape',
   description: 'Discover the wonders of India',
 }
 
