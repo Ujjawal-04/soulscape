@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^9.114.3",
     "@react-three/fiber": "^8.17.10",
     "framer-motion": "^11.11.8",
+    "leaflet": "^1.9.4",
     "lucide-react": "^0.452.0",
+    "mapbox-gl": "^3.7.0",
     "next": "14.2.15",
+    "next-themes": "^0.3.0",
     "react": "^18",
+    "react-datepicker": "^7.4.0",
     "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
     "three": "^0.169.0"
   },
   "devDependencies": {

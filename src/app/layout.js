@@ -1,6 +1,7 @@
 import './globals.css'
 import localFont from "next/font/local";
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from 'next-themes'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem />
           <Header />
           <main className="flex-grow">
             {children}
