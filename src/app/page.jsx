@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -124,44 +124,42 @@ export default function Component() {
               </button>
             </form>
 
-              <AnimatePresence>
-  {isDropdownOpen && (
-    <motion.ul
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.2 }}
-      className="absolute w-10/12 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg max-h-28 overflow-y-auto"
-    >
-      {suggestions.map((suggestion, index) => (
-        <li
-          key={index}
-          className={`px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer flex items-center ${
-            index === selectedIndex ? 'bg-gray-100 dark:bg-gray-700' : ''
-          }`}
-          onClick={() => handleSuggestionClick(suggestion)}
-        >
-          <Image
-            src={suggestion.image_url}
-            alt={suggestion.name}
-            width={60}
-            height={60}
-            className="rounded-full mr-3"
-          />
-          <div>
-            <span className="font-medium">{suggestion.name}</span>
-            <span className="text-sm text-gray-500 dark:text-gray-400 ml-2">({suggestion.state})</span>
-          </div>
-        </li>
-      ))}
-    </motion.ul>
-  )}
-</AnimatePresence>
-
+            <AnimatePresence>
+              {isDropdownOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute w-10/12 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg max-h-28 overflow-y-auto"
+                >
+                  {suggestions.map((suggestion, index) => (
+                    <li
+                      key={index}
+                      className={`px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer flex items-center ${
+                        index === selectedIndex ? 'bg-gray-100 dark:bg-gray-700' : ''
+                      }`}
+                      onClick={() => handleSuggestionClick(suggestion)}
+                    >
+                      <Image
+                        src={suggestion.image_url}
+                        alt={suggestion.name}
+                        width={60}
+                        height={60}
+                        className="rounded-full mr-3"
+                      />
+                      <div>
+                        <span className="font-medium">{suggestion.name}</span>
+                        <span className="text-sm text-gray-500 dark:text-gray-400 ml-2">({suggestion.state})</span>
+                      </div>
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
           </div>
         </motion.div>
 
-        {/* Rest of the component remains unchanged */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 mt-28 z-10">
           {Object.entries(placesData).slice(0, 3).map(([state, places], index) => (
             <motion.div
@@ -275,7 +273,7 @@ export default function Component() {
                   <div className="mb-4 p-3 bg-gradient-to-r from-teal-400  to-blue-400 dark:from-teal-500 dark:to-blue-500 rounded-full group-hover:from-teal-500 group-hover:to-blue-500 dark:group-hover:from-teal-400 dark:group-hover:to-blue-400 transition-all duration-300">
                     <item.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-teal-700 dark:text-teal-300 group-hover:text-teal-800 dark:group-hover:text-teal-200 transition-colors duration-300">
+                  <h3 className="text-xl font-semibold mb-2 text-teal-700 dark:text-teal-300  group-hover:text-teal-800 dark:group-hover:text-teal-200 transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-300">
@@ -288,20 +286,52 @@ export default function Component() {
         </motion.div>
 
         <AnimatePresence>
-          {isLoading && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-gradient-to-r from-teal-500 to-blue-500 dark:from-teal-800 dark:to-blue-800 bg-opacity-80 flex items-center justify-center z-50"
-            >
-              <div className="text-center bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl">
-                <div className="w-16 h-16 border-4 border-teal-500 dark:border-teal-400 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-                <p className="text-xl font-semibold text-teal-700 dark:text-teal-300">Preparing your journey...</p>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+  {isLoading && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 dark:from-teal-800 dark:to-blue-800 bg-opacity-90 flex items-center justify-center z-50"
+    >
+      <div className="text-center bg-white dark:bg-gray-800 p-4 sm:p-2 md:p-4 rounded-lg shadow-2xl max-w-sm w-full mx-4">
+        <motion.div
+          animate={{
+            rotate: [0, 360],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="w-16 h-16 border-4 border-teal-500 dark:border-teal-400 border-t-transparent rounded-full mx-auto mb-4"
+        />
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="text-lg sm:text-xl font-bold text-teal-700 dark:text-teal-300 mb-2"
+        >
+          Preparing Your Journey
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="text-gray-600 dark:text-gray-300 mb-4 text-sm"
+        >
+          Packing your virtual bags with the best of India's wonders...
+        </motion.p>
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="h-2 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full"
+        />
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
       </div>
     </div>
   )
