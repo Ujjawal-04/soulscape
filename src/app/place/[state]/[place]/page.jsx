@@ -19,7 +19,6 @@ function ScheduleVisitModal({ isOpen, onClose, placeName }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     setIsSending(true)
-
     emailjs.send(
       'service_p4m9pai',
       'template_pg089w8',
@@ -58,29 +57,35 @@ function ScheduleVisitModal({ isOpen, onClose, placeName }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+      className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4 overflow-y-auto"
     >
       <motion.div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 50, opacity: 0 }}
-        className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl max-w-md w-full"
+        className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-full max-w-md"
       >
-        <h3 className="text-2xl font-bold mb-4 text-teal-600 dark:text-teal-400">Schedule a Visit to {placeName}</h3>
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-xl sm:text-2xl font-bold text-teal-600 dark:text-teal-400">Schedule a Visit</h3>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+            <X size={24} />
+          </button>
+        </div>
+        <p className="mb-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">{placeName}</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="visitDate" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            <label htmlFor="visitDate" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Visit Date
             </label>
             <DatePicker
               id="visitDate"
               selected={visitDate}
               onChange={(date) => setVisitDate(date)}
-              className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+              className="w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500 text-sm sm:text-base"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Email
             </label>
             <input
@@ -89,21 +94,21 @@ function ScheduleVisitModal({ isOpen, onClose, placeName }) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+              className="w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500 text-sm sm:text-base"
             />
           </div>
-          <div className="flex justify-end space-x-3">
+          <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-3">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+              className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 w-full sm:w-auto"
             >
               Cancel
             </button>
             <button
               type="submit"
               disabled={isSending}
-              className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 disabled:opacity-50"
+              className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 disabled:opacity-50 w-full sm:w-auto"
             >
               {isSending ? 'Scheduling...' : 'Schedule'}
             </button>
@@ -129,7 +134,7 @@ function FullSizeImageModal({ isOpen, onClose, imageUrl, placeName }) {
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0.9 }}
-        className="relative max-w-4xl w-full h-full flex items-center justify-center"
+        className="relative max-w-4xl w-full h-full flex items-center justify-center p-4"
       >
         <div
           onClick={(e) => {
@@ -158,9 +163,7 @@ export default function PlaceDetails() {
   const { state, place } = params
   const decodedState = decodeURIComponent(state)
   const decodedPlace = decodeURIComponent(place)
-
   const placeDetails = placesData[decodedState]?.find(p => p.name === decodedPlace)
-
   const [isScheduleModalOpen, setIsScheduleModalOpen] = useState(false)
   const [isImageModalOpen, setIsImageModalOpen] = useState(false)
 
@@ -186,9 +189,7 @@ export default function PlaceDetails() {
   const handleOpenMap = () => {
     const address = `${placeDetails.name}, ${decodedState}, India`
     const encodedAddress = encodeURIComponent(address)
-    
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-    
     if (isMobile) {
       window.location.href = `geo:0,0?q=${encodedAddress}`
     } else {
@@ -201,12 +202,12 @@ export default function PlaceDetails() {
   }
 
   return (
-    <div className="container mx-auto px-6 py-12">
-      <Link 
-        href={`/search?q=${encodeURIComponent(decodedState)}`} 
-        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-600 to-blue-600 dark:from-teal-500 dark:to-blue-500 text-white rounded-r-md hover:from-teal-700 hover:to-blue-700 dark:hover:from-teal-600 dark:hover:to-blue-600 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mb-6"
+    <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <Link
+        href={`/search?q=${encodeURIComponent(decodedState)}`}
+        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-600 to-blue-600 dark:from-teal-500 dark:to-blue-500 text-white rounded-r-md hover:from-teal-700 hover:to-blue-700 dark:hover:from-teal-600 dark:hover:to-blue-600 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mb-6 text-sm sm:text-base"
       >
-        <ArrowLeft className="mr-2 h-5 w-5" />
+        <ArrowLeft className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
         Back to {decodedState}
       </Link>
       <motion.div
@@ -215,7 +216,7 @@ export default function PlaceDetails() {
         transition={{ duration: 0.5 }}
         className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
       >
-        <div className="relative h-96 cursor-pointer" onClick={handleImageClick}>
+        <div className="relative h-64 sm:h-96 cursor-pointer" onClick={handleImageClick}>
           <Image
             src={placeDetails.image_url}
             alt={placeDetails.name}
@@ -224,50 +225,56 @@ export default function PlaceDetails() {
             className="transition-transform duration-300 hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70" />
-          <h2 className="absolute bottom-6 left-6 text-4xl font-bold text-white">{placeDetails.name}</h2>
+          <h2 className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 text-2xl sm:text-4xl font-bold text-white">
+            {placeDetails.name}
+          </h2>
         </div>
-        <div className="p-6">
-          <motion.p 
+        <div className="p-4 sm:p-6">
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-gray-600 dark:text-gray-300 mb-4"
+            className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4"
           >
             {placeDetails.description}
           </motion.p>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 p-4 rounded-md mb-4"
           >
             <div className="flex items-center mb-2">
-              <Clock className="text-teal-600 dark:text-teal-400 mr-2" />
-              <p className="text-sm text-gray-700 dark:text-gray-300"><strong>Timings:</strong> {placeDetails.timings}</p>
+              <Clock className="text-teal-600 dark:text-teal-400 mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300">
+                <strong>Timings:</strong> {placeDetails.timings}
+              </p>
             </div>
             <div className="flex items-center">
-              <Ticket className="text-teal-600 dark:text-teal-400 mr-2" />
-              <p className="text-sm text-gray-700 dark:text-gray-300"><strong>Ticket Price:</strong> {placeDetails.ticket_price}</p>
+              <Ticket className="text-teal-600 dark:text-teal-400 mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300">
+                <strong>Ticket Price:</strong> {placeDetails.ticket_price}
+              </p>
             </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex space-x-4"
+            className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4"
           >
             <button
               onClick={handleScheduleVisit}
-              className="flex-1 bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300 flex items-center justify-center"
+              className="flex-1 bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition duration-300 flex items-center justify-center text-sm sm:text-base"
             >
-              <Calendar className="mr-2" />
+              <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Schedule Visit
             </button>
             <button
               onClick={handleOpenMap}
-              className="flex-1 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 flex items-center justify-center"
+              className="flex-1 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 flex items-center justify-center text-sm sm:text-base"
             >
-              <Map className="mr-2" />
+              <Map className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Open in Maps
             </button>
           </motion.div>
