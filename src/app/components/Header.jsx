@@ -74,7 +74,6 @@ export default function Header() {
                 className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300"
                 aria-label="Toggle theme"
               >
-                {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
               </motion.button>
             )}
           </div>
@@ -86,7 +85,6 @@ export default function Header() {
                 className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300 mr-2"
                 aria-label="Toggle theme"
               >
-                {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
               </button>
             )}
             <button
